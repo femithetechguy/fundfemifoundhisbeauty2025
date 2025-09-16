@@ -2,9 +2,9 @@
   "funds": [
     {
       "name": "Cash App",
-      "id": "$1freshprof",
+      "id": "$babeb5",
       "type": "cashapp",
-  "qr_image": "images/$1freshprof.png"
+  "qr_image": "images/$babeb5.png"
     },
     {
       "name": "Zelle",
