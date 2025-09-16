@@ -1,0 +1,111 @@
+body {
+  background: #FFFFFF;
+  color: #586B36;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #D8E460;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#funds-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.fund-item {
+  background: #D8E460;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(88, 107, 54, 0.1);
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+}
+
+.fund-item h2 {
+  color: #586B36;
+  margin-bottom: 0.5rem;
+}
+
+.fund-id {
+  font-weight: bold;
+  color: #586B36;
+}
+
+.fund-qr {
+  margin-top: 1rem;
+  width: 220px;
+  height: 220px;
+  border-radius: 0.5rem;
+  border: 4px solid #586B36;
+  box-shadow: 0 4px 16px rgba(88, 107, 54, 0.15);
+  background: #fff;
+}
+
+footer {
+  background: #D8E460;
+  color: #586B36;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.footer-left h3 {
+  margin: 0;
+  color: #586B36;
+}
+
+.footer-left p {
+  margin: 0.5rem 0 0 0;
+  color: #586B36;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right .hashtag {
+  font-weight: bold;
+  color: #586B36;
+}
+
+.footer-right .message {
+  font-size: 1.5rem;
+  color: #D8E460;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: #586B36;
+  font-size: 0.9rem;
+}
+
+.copyright a {
+  color: #586B36;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright a.text-primary {
+  color: #D8E460;
+}

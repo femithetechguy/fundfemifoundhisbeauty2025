@@ -1,0 +1,24 @@
+{
+  "footer": {
+    "leftColumn": {
+      "title": "EwaFemi2025",
+      "subtitle": "Thank you for being part of our special day"
+    },
+    "rightColumn": {
+      "hashtag": "#EwaFemi2025",
+      "message": "❤️❤️❤️❤️"
+    },
+    "copyright": {
+      "text": "&copy; 2025 EwaFemi",
+      "attribution": {
+        "text": "Crafted with",
+        "icon": "bi bi-heart-fill text-primary",
+        "linkText": "FTTG SOLUTIONS",
+        "linkUrl": "https://fttgsolutions.com",
+        "linkTarget": "_blank",
+        "linkRel": "noopener noreferrer",
+        "linkClass": "text-primary"
+      }
+    }
+  }
+}
