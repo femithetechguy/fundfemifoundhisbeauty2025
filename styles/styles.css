@@ -1,13 +1,13 @@
 body {
   background: #FFFFFF;
-  color: #586B36;
+  color: #000000;
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  color: #D8E460;
+  color: #000000;
   text-align: center;
   margin-top: 2rem;
 }
@@ -16,9 +16,38 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 7rem;
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 1100px;
+}
+
+@media (max-width: 700px) {
+  #funds-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100vw;
+    margin: 1.5rem 0.5rem;
+  }
+  .fund-item {
+    width: 90vw;
+    max-width: 320px;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qr-wrapper {
+    min-height: 180px;
+    max-width: 100vw;
+  }
+  .fund-qr {
+    width: 95%;
+    height: 95%;
+    max-width: 180px;
+    max-height: 180px;
+  }
 }
 
 .fund-item {
@@ -28,26 +57,56 @@ h1 {
   padding: 2rem;
   text-align: center;
   width: 300px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
 }
 
-.fund-item h2 {
-  color: #586B36;
-  margin-bottom: 0.5rem;
+.fund-item:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(88, 107, 54, 0.18);
+}
+
+.fund-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(88, 107, 54, 0.12);
+}
+
+.fund-item h2, .fund-id {
+  color: #000000;
 }
 
 .fund-id {
   font-weight: bold;
-  color: #586B36;
+}
+
+.qr-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .fund-qr {
-  margin-top: 1rem;
-  width: 220px;
-  height: 220px;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
   border-radius: 0.5rem;
   border: 4px solid #586B36;
   box-shadow: 0 4px 16px rgba(88, 107, 54, 0.15);
   background: #fff;
+  display: block;
 }
 
 footer {
